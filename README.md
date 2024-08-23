@@ -1,24 +1,25 @@
 # American Sign Language and Facial Expression Recognition
 
 ## Overview
-This project implements a deep learning-based system for real-time American Sign Language (ASL) and facial expression recognition. It utilizes state-of-the-art object detection models, including YOLOv9, YOLOv8, Detectron2 (Faster R-CNN), and DETR, to accurately detect and interpret ASL gestures and facial expressions in video streams.
+This project implements a deep learning-based system for real-time American Sign Language (ASL) and facial expression recognition. It utilizes state-of-the-art object detection models, including YOLOv9, YOLOv8, Detectron2 (Faster R-CNN), and DETR (DEtection TRansformer), to accurately detect and interpret ASL gestures and facial expressions in video streams.
 
-## Authors
+## Author
 - Ravi Teja Vempati
 
 ## Abstract
 Our study proposes a novel approach for ASL and facial expression detection using deep learning models. We evaluated the performance of YOLOv9, YOLOv8, Detectron2 (Faster R-CNN), and DETR on a manually annotated dataset. The results showed that YOLOv9 performed better in accurately detecting ASL signs and facial expressions in real-time video streams.
 
-## Dataset
-- 4429 training images
-- 551 validation images
-- 195 test images
-- Ratio: 22:3:1
-- Augmentation techniques applied:
-  - Rotations between -15° and +15°
-  - Noise addition up to 3% of pixels
-  - Brightness adjustment between -20% and +20%
-  - Exposure adjustment between -10% and +10%
+## Features
+- ASL alphabet recognition (A-Z)
+- Facial expression recognition (angry, happy, neutral, sad, surprise)
+- Multiple model implementations:
+  - YOLOv9
+  - YOLOv8
+  - Detectron2 (Faster R-CNN)
+  - DETR (DEtection TRansformer)
+- Custom dataset training and evaluation
+- Performance metrics and visualizations
+- Real-time detection capabilities
 
 ## Requirements
 - Python 3.x
@@ -29,6 +30,7 @@ Our study proposes a novel approach for ASL and facial expression detection usin
 - PyTorch
 - Detectron2
 - DETR
+- Other dependencies listed in `requirements.txt`
 
 ## Setup and Installation
 1. Clone this repository:
@@ -63,12 +65,24 @@ Our study proposes a novel approach for ASL and facial expression detection usin
    ```
 
 ## Results
-Our experiments showed that YOLOv9 outperformed other models in detecting ASL signs and facial expressions. Detailed results, including training times, test results, and performance metrics, can be found in the Report.
+Our experiments showed that YOLOv9 outperformed other models in detecting ASL signs and facial expressions. Detailed results, including training times, test results, and performance metrics, can be found in the full research report.
+
+## Results Visualization
+Results and visualizations can be found in the `runs` directory after training.
 
 ## Future Work
 - Implement multimodal systems integrating various sensory inputs
 - Enhance recognition of non-manual features
 - Develop a user-friendly interface for real-world applications
+- Implement real-time ASL translation
+- Explore multi-modal approaches combining vision and natural language processing
+- Extend the model to handle continuous sign language recognition
 
 ## Contributing
 Contributions to this project are welcome. Please fork the repository and submit a pull request with your changes.
+
+## Acknowledgments
+- YOLOv9 and YOLOv8 implementations based on the Ultralytics framework
+- Detectron2 implementation by Facebook AI Research
+- DETR implementation based on the Hugging Face Transformers library
+- Dataset management and augmentation done using Roboflow
