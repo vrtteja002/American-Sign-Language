@@ -1,0 +1,8 @@
+Python 3.x
+Google Colab
+Roboflow
+Ultralytics
+Supervision package
+PyTorch
+Detectron2
+DETR
