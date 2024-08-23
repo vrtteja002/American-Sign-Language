@@ -63,7 +63,7 @@ Our study proposes a novel approach for ASL and facial expression detection usin
    ```
 
 ## Results
-Our experiments showed that YOLOv9 outperformed other models in detecting ASL signs and facial expressions. Detailed results, including training times, test results, and performance metrics, can be found in the full research paper.
+Our experiments showed that YOLOv9 outperformed other models in detecting ASL signs and facial expressions. Detailed results, including training times, test results, and performance metrics, can be found in the Report.
 
 ## Future Work
 - Implement multimodal systems integrating various sensory inputs
