@@ -21,16 +21,6 @@ Our study proposes a novel approach for ASL and facial expression detection usin
 - Performance metrics and visualizations
 - Real-time detection capabilities
 
-## Requirements
-- Python 3.x
-- Google Colab
-- Roboflow
-- Ultralytics
-- Supervision package
-- PyTorch
-- Detectron2
-- DETR
-- Other dependencies listed in `requirements.txt`
 
 ## Setup and Installation
 1. Clone this repository:
